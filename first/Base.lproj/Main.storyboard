@@ -111,7 +111,7 @@
                                 <color key="backgroundColor" systemColor="viewFlipsideBackgroundColor"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovt-5K-snc">
-                                <rect key="frame" x="31.999999999999996" y="392" width="49.666666666666657" height="23.333333333333314"/>
+                                <rect key="frame" x="32" y="392" width="60" height="23"/>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -131,13 +131,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The app that takes you beyond   the stars" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsX-ie-VgU">
-                                <rect key="frame" x="76" y="249.66666666666666" width="241" height="39.666666666666657"/>
+                                <rect key="frame" x="62" y="249.66666666666666" width="269.33333333333331" height="47.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySt-O9-DdO">
-                                <rect key="frame" x="334" y="563" width="21" height="10.666666666666629"/>
+                                <rect key="frame" x="334" y="564" width="21" height="12.666666666666629"/>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="9"/>
                                 <color key="textColor" systemColor="systemMintColor"/>
                                 <nil key="highlightedColor"/>
@@ -150,13 +150,13 @@
                                 </buttonConfiguration>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nebula" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ase-Wj-fsp">
-                                <rect key="frame" x="85.666666666666686" y="160" width="222" height="81.666666666666686"/>
+                                <rect key="frame" x="72.000000000000014" y="160" width="249.33333333333337" height="81.666666666666686"/>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="70"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doesn’t have an account ? press" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZU1-yp-XAd">
-                                <rect key="frame" x="192" y="563" width="147" height="10.666666666666629"/>
+                                <rect key="frame" x="179" y="564" width="160" height="12.666666666666629"/>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="9"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -166,26 +166,26 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ovt-5K-snc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="289" id="8vd-Kx-NRd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ovt-5K-snc" secondAttribute="trailing" constant="301" id="AFr-6K-6kg"/>
                             <constraint firstItem="uQ5-oL-ZjO" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="323:715" id="AHN-Jh-gFy"/>
                             <constraint firstItem="ase-Wj-fsp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="57" id="FXF-7W-cUr"/>
                             <constraint firstItem="mtf-K1-xJw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="GP1-K6-PX0"/>
                             <constraint firstItem="ySt-O9-DdO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="334" id="HQa-Ha-iRk"/>
                             <constraint firstItem="uQ5-oL-ZjO" firstAttribute="width" secondItem="mtf-K1-xJw" secondAttribute="width" id="IQt-kG-oOc"/>
-                            <constraint firstItem="ySt-O9-DdO" firstAttribute="top" secondItem="mtf-K1-xJw" secondAttribute="bottom" constant="7" id="JaC-iM-8l6"/>
+                            <constraint firstItem="ySt-O9-DdO" firstAttribute="top" secondItem="mtf-K1-xJw" secondAttribute="bottom" constant="8" id="JaC-iM-8l6"/>
                             <constraint firstItem="pFd-kA-yLe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="OAC-Jh-Jfh"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ovt-5K-snc" secondAttribute="trailing" constant="311.33333333333337" id="QbU-mK-7T2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ovt-5K-snc" secondAttribute="bottom" constant="402.66666666666669" id="W2e-tW-dMg"/>
                             <constraint firstItem="uQ5-oL-ZjO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XIj-QD-a3L"/>
                             <constraint firstItem="ase-Wj-fsp" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XKP-HL-sax"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ase-Wj-fsp" secondAttribute="bottom" constant="576.33333333333326" id="Zc8-sd-hGu"/>
                             <constraint firstItem="mtf-K1-xJw" firstAttribute="width" secondItem="uQ5-oL-ZjO" secondAttribute="height" multiplier="19:2" id="cal-nH-aze"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZU1-yp-XAd" secondAttribute="trailing" constant="54" id="dOS-Sj-hm6"/>
-                            <constraint firstItem="ovt-5K-snc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="eYK-Ch-YvH"/>
-                            <constraint firstItem="ZU1-yp-XAd" firstAttribute="top" secondItem="mtf-K1-xJw" secondAttribute="bottom" constant="7" id="gmb-rF-cRc"/>
+                            <constraint firstItem="ovt-5K-snc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="eRw-5u-UzO"/>
+                            <constraint firstItem="ZU1-yp-XAd" firstAttribute="top" secondItem="mtf-K1-xJw" secondAttribute="bottom" constant="8" id="gmb-rF-cRc"/>
                             <constraint firstItem="fsX-ie-VgU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="it0-rh-aqk"/>
                             <constraint firstItem="uQ5-oL-ZjO" firstAttribute="top" secondItem="ovt-5K-snc" secondAttribute="bottom" constant="28.333333333333371" id="kEy-bF-51U"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ySt-O9-DdO" secondAttribute="trailing" constant="38" id="pG2-MX-OOG"/>
-                            <constraint firstItem="ZU1-yp-XAd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="192" id="rdQ-0d-SJG"/>
+                            <constraint firstItem="ZU1-yp-XAd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="179" id="rdQ-0d-SJG"/>
                             <constraint firstItem="fsX-ie-VgU" firstAttribute="top" secondItem="ase-Wj-fsp" secondAttribute="bottom" constant="8" symbolic="YES" id="rg8-8g-m8x"/>
                             <constraint firstItem="pFd-kA-yLe" firstAttribute="top" secondItem="mtf-K1-xJw" secondAttribute="bottom" constant="57" id="vMb-fA-oYV"/>
                             <constraint firstItem="mtf-K1-xJw" firstAttribute="top" secondItem="uQ5-oL-ZjO" secondAttribute="bottom" constant="44.333333333333314" id="ym5-G7-O2q"/>
