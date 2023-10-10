@@ -38,10 +38,6 @@
 		6CC5D6362AD5D45B00AB28EE /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC5D6352AD5D45B00AB28EE /* EventsViewController.swift */; };
 		6CC5D6382AD5D46A00AB28EE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC5D6372AD5D46A00AB28EE /* RegisterViewController.swift */; };
 		6CC5D63A2AD5D51300AB28EE /* ObservableObjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC5D6392AD5D51300AB28EE /* ObservableObjectsViewController.swift */; };
-		6CC5D6412AD5D75700AB28EE /* Planet.svg in Resources */ = {isa = PBXBuildFile; fileRef = 6CC5D63C2AD5D75700AB28EE /* Planet.svg */; };
-		6CC5D6422AD5D75700AB28EE /* Event.svg in Resources */ = {isa = PBXBuildFile; fileRef = 6CC5D63D2AD5D75700AB28EE /* Event.svg */; };
-		6CC5D6432AD5D75700AB28EE /* Telescope.svg in Resources */ = {isa = PBXBuildFile; fileRef = 6CC5D63E2AD5D75700AB28EE /* Telescope.svg */; };
-		6CC5D6442AD5D75700AB28EE /* Stats.svg in Resources */ = {isa = PBXBuildFile; fileRef = 6CC5D63F2AD5D75700AB28EE /* Stats.svg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,10 +74,6 @@
 		6CC5D6352AD5D45B00AB28EE /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		6CC5D6372AD5D46A00AB28EE /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		6CC5D6392AD5D51300AB28EE /* ObservableObjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableObjectsViewController.swift; sourceTree = "<group>"; };
-		6CC5D63C2AD5D75700AB28EE /* Planet.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Planet.svg; sourceTree = "<group>"; };
-		6CC5D63D2AD5D75700AB28EE /* Event.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Event.svg; sourceTree = "<group>"; };
-		6CC5D63E2AD5D75700AB28EE /* Telescope.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Telescope.svg; sourceTree = "<group>"; };
-		6CC5D63F2AD5D75700AB28EE /* Stats.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Stats.svg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,10 +154,6 @@
 		6CC5D63B2AD5D68D00AB28EE /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				6CC5D63D2AD5D75700AB28EE /* Event.svg */,
-				6CC5D63C2AD5D75700AB28EE /* Planet.svg */,
-				6CC5D63F2AD5D75700AB28EE /* Stats.svg */,
-				6CC5D63E2AD5D75700AB28EE /* Telescope.svg */,
 			);
 			path = Icons;
 			sourceTree = "<group>";
@@ -232,14 +220,11 @@
 				6CC5D6272AD5D13D00AB28EE /* Poppins-LightItalic.ttf in Resources */,
 				6C42073A2AD49FA100B12E3D /* LaunchScreen.storyboard in Resources */,
 				6CC5D62A2AD5D14500AB28EE /* Poppins-Regular.ttf in Resources */,
-				6CC5D6412AD5D75700AB28EE /* Planet.svg in Resources */,
 				6CC5D6212AD5D12900AB28EE /* Poppins-ExtraBold.ttf in Resources */,
 				6CC5D62C2AD5D14900AB28EE /* Poppins-SemiBoldItalic.ttf in Resources */,
 				6CC5D62B2AD5D14700AB28EE /* Poppins-SemiBold.ttf in Resources */,
 				6C78C7932AD536B20085B30F /* sky.mp4 in Resources */,
-				6CC5D6422AD5D75700AB28EE /* Event.svg in Resources */,
 				6CC5D6282AD5D14000AB28EE /* Poppins-Medium.ttf in Resources */,
-				6CC5D6432AD5D75700AB28EE /* Telescope.svg in Resources */,
 				6CC5D62E2AD5D14F00AB28EE /* Poppins-Thin.ttf in Resources */,
 				6CC5D61F2AD5D11F00AB28EE /* Poppins-Bold.ttf in Resources */,
 				6CC5D6222AD5D12C00AB28EE /* Poppins-ExtraBoldItalic.ttf in Resources */,
@@ -252,7 +237,6 @@
 				6CC5D6232AD5D13200AB28EE /* Poppins-ExtraLight.ttf in Resources */,
 				6CC5D61E2AD5D11D00AB28EE /* Poppins-BlackItalic.ttf in Resources */,
 				6CC5D61D2AD5D11900AB28EE /* Poppins-Black.ttf in Resources */,
-				6CC5D6442AD5D75700AB28EE /* Stats.svg in Resources */,
 				6CC5D6202AD5D12700AB28EE /* Poppins-BoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
