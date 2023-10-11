@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6165209C2AD67FDE0087AA6E /* sky.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6165209B2AD67FDD0087AA6E /* sky.mp4 */; };
 		6C42072E2AD49FA000B12E3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C42072D2AD49FA000B12E3D /* AppDelegate.swift */; };
 		6C4207302AD49FA000B12E3D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C42072F2AD49FA000B12E3D /* SceneDelegate.swift */; };
 		6C4207322AD49FA000B12E3D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C4207312AD49FA000B12E3D /* LoginViewController.swift */; };
@@ -38,10 +37,10 @@
 		6CC5D6362AD5D45B00AB28EE /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC5D6352AD5D45B00AB28EE /* EventsViewController.swift */; };
 		6CC5D6382AD5D46A00AB28EE /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC5D6372AD5D46A00AB28EE /* RegisterViewController.swift */; };
 		6CC5D63A2AD5D51300AB28EE /* ObservableObjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC5D6392AD5D51300AB28EE /* ObservableObjectsViewController.swift */; };
+		6CD70B102AD68DC3004D7DCF /* sky.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 6CD70B0F2AD68DC3004D7DCF /* sky.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6165209B2AD67FDD0087AA6E /* sky.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = sky.mp4; path = ../../Downloads/sky.mp4; sourceTree = "<group>"; };
 		6C42072A2AD49FA000B12E3D /* first.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = first.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C42072D2AD49FA000B12E3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C42072F2AD49FA000B12E3D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +73,7 @@
 		6CC5D6352AD5D45B00AB28EE /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
 		6CC5D6372AD5D46A00AB28EE /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		6CC5D6392AD5D51300AB28EE /* ObservableObjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableObjectsViewController.swift; sourceTree = "<group>"; };
+		6CD70B0F2AD68DC3004D7DCF /* sky.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sky.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +90,7 @@
 		6C4207212AD49FA000B12E3D = {
 			isa = PBXGroup;
 			children = (
-				6165209B2AD67FDD0087AA6E /* sky.mp4 */,
+				6CD70B0F2AD68DC3004D7DCF /* sky.mp4 */,
 				6C42072C2AD49FA000B12E3D /* first */,
 				6C42072B2AD49FA000B12E3D /* Products */,
 			);
@@ -220,10 +220,10 @@
 				6CC5D6272AD5D13D00AB28EE /* Poppins-LightItalic.ttf in Resources */,
 				6C42073A2AD49FA100B12E3D /* LaunchScreen.storyboard in Resources */,
 				6CC5D62A2AD5D14500AB28EE /* Poppins-Regular.ttf in Resources */,
-				6165209C2AD67FDE0087AA6E /* sky.mp4 in Resources */,
 				6CC5D6212AD5D12900AB28EE /* Poppins-ExtraBold.ttf in Resources */,
 				6CC5D62C2AD5D14900AB28EE /* Poppins-SemiBoldItalic.ttf in Resources */,
 				6CC5D62B2AD5D14700AB28EE /* Poppins-SemiBold.ttf in Resources */,
+				6CD70B102AD68DC3004D7DCF /* sky.mp4 in Resources */,
 				6CC5D6282AD5D14000AB28EE /* Poppins-Medium.ttf in Resources */,
 				6CC5D62E2AD5D14F00AB28EE /* Poppins-Thin.ttf in Resources */,
 				6CC5D61F2AD5D11F00AB28EE /* Poppins-Bold.ttf in Resources */,
