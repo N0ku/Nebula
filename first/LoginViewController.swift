@@ -13,6 +13,10 @@ class LoginViewController: UIViewController {
 
     @IBOutlet weak var videoBackground: UIView!
     
+    @IBOutlet weak var loginTextField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -39,6 +43,16 @@ class LoginViewController: UIViewController {
     @objc func videoDidPlayToEnd(_ notification: Notification){
         let player: AVPlayerItem = notification.object as! AVPlayerItem
         player.seek(to: CMTime.zero)
+    }
+    
+    @IBAction func login(_ sender: Any) {
+        if self.loginTextField.text == "admin" && self.passwordTextField.text == "admin" {
+            if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "Home") as? HomeViewController {
+                
+                // Navigation Bar
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+        }
     }
 }
 
