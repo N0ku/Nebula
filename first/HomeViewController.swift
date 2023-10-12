@@ -163,16 +163,19 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         // Configure the cell...
         cell?.configure(name: eventBrowser[indexPath.row].name, imageURL: eventBrowser[indexPath.row].image, date: eventBrowser[indexPath.row].date)
-            
+        self.homeTableView.backgroundColor = UIColor.clear
+        self.homeTableView.backgroundView = UIView(frame: CGRect.zero)
+        cell?.backgroundColor = UIColor.clear
+        
         return cell!
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
           if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "modalEvent") as? ModalEventViewController {
-              vc.tableInformations = self.eventBrowser
+              vc.tableInformations = self.eventBrowser[indexPath.row]
               self.present(vc, animated: true, completion: nil)
           }
-      }
+    }
     
 
 }
