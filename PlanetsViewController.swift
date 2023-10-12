@@ -36,7 +36,7 @@ class PlanetsViewController: UIViewController, UICollectionViewDataSource, UICol
         self.planetCollectionView.backgroundColor = UIColor.clear
         self.planetCollectionView?.backgroundView = UIView(frame: CGRect.zero)
         
-        var layout = PlanetsViewControllerLayout()
+        let layout = PlanetsViewControllerLayout()
         planetCollectionView.collectionViewLayout = layout
         
         planetCollectionView.dataSource = self
