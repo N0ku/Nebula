@@ -1,17 +1,22 @@
 //
-//  PlanetsViewController.swift
+//  ExoplanetViewController.swift
 //  first
 //
-//  Created by Lecouturier Lucie on 10/10/2023.
+//  Created by Killian on 12/10/2023.
 //
 
 import UIKit
 
-class PlanetsViewController: UIViewController {
+class ExoplanetViewController: UIViewController {
 
+    @IBOutlet weak var textField: UILabel!
+    
+    var kepler_name = "kepler name"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.textField.text = self.kepler_name
         // Do any additional setup after loading the view.
     }
     
