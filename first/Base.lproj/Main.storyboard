@@ -109,6 +109,9 @@
                     <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" landscapeImage="house" selectedImage="house" id="s09-kI-c2k">
                         <color key="badgeColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="ImageDaily" destination="hnV-OO-oLb" id="S15-fY-cbt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rcn-lV-1uW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -262,7 +265,7 @@ RGlzY292ZXIgdGhlIEV4b3BsYW5ldHMcDSBpbiB0aGUgdW5pdmVyc2Ug8J+MjQ
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Humans in space now:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3YB-GD-bdQ">
-                                <rect key="frame" x="104" y="177" width="240" height="24.666666666666657"/>
+                                <rect key="frame" x="104" y="177" width="240" height="29.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -271,16 +274,16 @@ RGlzY292ZXIgdGhlIEV4b3BsYW5ldHMcDSBpbiB0aGUgdW5pdmVyc2Ug8J+MjQ
                                 <rect key="frame" x="16" y="164" width="79" height="93"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1SF-nb-fSc">
-                                <rect key="frame" x="104" y="206.66666666666666" width="21" height="24.666666666666657"/>
+                                <rect key="frame" x="104" y="211.66666666666666" width="21" height="29.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="21"/>
                                 <color key="textColor" red="0.89803921568627454" green="0.48627450980392156" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="astronaut" translatesAutoresizingMaskIntoConstraints="NO" id="hQZ-Q5-okc">
-                                <rect key="frame" x="133" y="210.66666666666666" width="20" height="20"/>
+                                <rect key="frame" x="133" y="215.66666666666666" width="20" height="20"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current ISS potition:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqO-9q-kE5">
-                                <rect key="frame" x="104" y="271.33333333333331" width="209" height="24.666666666666686"/>
+                                <rect key="frame" x="104" y="281.33333333333331" width="209" height="29.666666666666686"/>
                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -289,7 +292,7 @@ RGlzY292ZXIgdGhlIEV4b3BsYW5ldHMcDSBpbiB0aGUgdW5pdmVyc2Ug8J+MjQ
                                 <rect key="frame" x="16" y="276" width="79" height="90"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-51.066°N -166.438°E" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Eo-Lv-5GI">
-                                <rect key="frame" x="104" y="304" width="220" height="24.666666666666686"/>
+                                <rect key="frame" x="104" y="319" width="220" height="29.666666666666686"/>
                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="21"/>
                                 <color key="textColor" red="0.8980392157" green="0.48627450979999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -419,13 +422,13 @@ objects in the sky ! 🌌</string>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The app that takes you beyond   the stars" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsX-ie-VgU">
-                                <rect key="frame" x="76" y="249.66666666666666" width="241" height="39.666666666666657"/>
+                                <rect key="frame" x="62" y="249.66666666666666" width="269.33333333333331" height="47.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySt-O9-DdO">
-                                <rect key="frame" x="334" y="564" width="21" height="10.666666666666629"/>
+                                <rect key="frame" x="334" y="564" width="21" height="12.666666666666629"/>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="9"/>
                                 <color key="textColor" systemColor="systemMintColor"/>
                                 <nil key="highlightedColor"/>
@@ -441,13 +444,13 @@ objects in the sky ! 🌌</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nebula" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ase-Wj-fsp">
-                                <rect key="frame" x="85.666666666666686" y="160" width="222" height="81.666666666666686"/>
+                                <rect key="frame" x="72.000000000000014" y="160" width="249.33333333333337" height="81.666666666666686"/>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="70"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doesn’t have an account ? press" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZU1-yp-XAd">
-                                <rect key="frame" x="179" y="564" width="160" height="10.666666666666629"/>
+                                <rect key="frame" x="179" y="564" width="160" height="12.666666666666629"/>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="9"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -538,7 +541,8 @@ objects in the sky ! 🌌</string>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="characterWrap" numberOfLines="20" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0E-0R-EcM">
                                 <rect key="frame" x="43" y="214" width="288" height="456"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ipsum metus, accumsan lacinia purus vel, vulputate efficitur neque. Nulla imperdiet viverra eros, id finibus ligula tristique vitae. Donec malesuada nulla felis, sed dapibus lorem luctus quis. Nulla iaculis tempus porta. Donec ut nisl id metus aliquam tempus. Quisque quis dolor metus. Nulla quam mi, volutpat sit amet nisi id, consequat laoreet elit. Sed purus risus, condimentum vel lacinia at, pellentesque sit amet est. Fusce gravida libero ipsum, euismod mollis justo feugiat in. Aliquam erat volutpat.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit amet, 
+consectetur adipiscing elit. Donec ipsum metus, accumsan lacinia purus vel, vulputate efficitur neque. Nulla imperdiet viverra eros, id finibus ligula tristique vitae. Donec malesuada nulla felis, sed dapibus lorem luctus quis. Nulla iaculis tempus porta. Donec ut nisl id metus aliquam tempus. Quisque quis dolor metus. Nulla quam mi, volutpat sit amet nisi id, consequat laoreet elit. Sed purus risus, condimentum vel lacinia at, pellentesque sit amet est. Fusce gravida libero ipsum, euismod mollis justo feugiat in. Aliquam erat volutpat.</string>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -578,22 +582,22 @@ objects in the sky ! 🌌</string>
     <resources>
         <image name="ISS" width="91" height="90"/>
         <image name="astronaut" width="20" height="20"/>
-        <image name="calendar" catalog="system" width="128" height="107"/>
+        <image name="calendar" catalog="system" width="32" height="32"/>
         <image name="calendar.badge.exclamationmark" catalog="system" width="128" height="109"/>
         <image name="chart.bar.xaxis" catalog="system" width="128" height="97"/>
         <image name="eye" catalog="system" width="128" height="79"/>
         <image name="globe.europe.africa" catalog="system" width="128" height="123"/>
         <image name="globe.europe.africa.fill" catalog="system" width="128" height="123"/>
-        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="house" catalog="system" width="32" height="32"/>
         <image name="spaceship" width="79" height="93"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemMintColor">
-            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="viewFlipsideBackgroundColor">
             <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
