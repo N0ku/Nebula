@@ -15,8 +15,6 @@ class CustomEventViewCell: UITableViewCell {
     
     @IBOutlet weak var descriptionLabel: UILabel!
     
-    @IBOutlet weak var seeMoreButton: UIButton!
-    
     override func awakeFromNib() {
             super.awakeFromNib()
             // Initialization code

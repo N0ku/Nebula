@@ -517,6 +517,21 @@ objects in the sky ! 🌌</string>
             </objects>
             <point key="canvasLocation" x="1768.7022900763359" y="131.69014084507043"/>
         </scene>
+        <!--Modal Event View Controller-->
+        <scene sceneID="Rjs-ze-NMV">
+            <objects>
+                <viewController storyboardIdentifier="modalEvent" id="0ah-KA-OMi" customClass="ModalEventViewController" customModule="first" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ok5-du-tKU">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="hqX-ev-rec"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yG0-jz-2Rr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-103" y="-13"/>
+        </scene>
     </scenes>
     <resources>
         <image name="ISS" width="91" height="90"/>

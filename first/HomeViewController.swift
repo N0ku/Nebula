@@ -38,33 +38,6 @@ extension EventItem {
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
      var eventBrowser: [EventItem] = []
         
-
-    /*var eventBrowser:[EventItem] = [
-        EventItem(
-          name: "Event 1",
-          description: "Description 1",
-          image: "Image URL 1",
-          location: "Location 1",
-          date: "Date 1",
-          hour: "Hour 1"
-        ),
-        EventItem(
-          name: "Event 2",
-          description: "Description 2",
-          image: "Image URL 2",
-          location: "Location 2",
-          date: "Date 2",
-          hour: "Hour 2"
-        ),
-        EventItem(
-          name: "Event 3",
-          description: "Description 3",
-          image: "Image URL 3",
-          location: "Location 3",
-          date: "Date 3",
-          hour: "Hour 3"
-        )
-      ]*/
     let config = URLSessionConfiguration.default
 
     @IBOutlet weak var homeTableView: UITableView!
@@ -129,19 +102,21 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "homeEventCell", for: indexPath) as? CustomEventViewCell
-
+        
         // Configure the cell...
         cell?.configure(name: eventBrowser[indexPath.row].name, imageURL: eventBrowser[indexPath.row].image, date: eventBrowser[indexPath.row].date)
-        /*
-        if indexPath.row % 2 == 0 {
-            cell.backgroundColor = UIColor.init(red: 0.61176471, green: 0.80392157, blue: 0.8627451, alpha: 1)
-        } else {
-            cell.backgroundColor = UIColor.init(red: 0.32941176, green: 0.56862745, blue: 0.65882353, alpha: 1)
-        }*/
             
         return cell!
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+          if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "modalEvent") as? ModalEventViewController {
+              vc.tableInformations = self.eventBrowser
+              self.present(vc, animated: true, completion: nil)
+          }
+      }
     
     /*
     // MARK: - Navigation
