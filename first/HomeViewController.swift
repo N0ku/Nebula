@@ -60,16 +60,46 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
     let config = URLSessionConfiguration.default
 
+    @IBOutlet weak var dailyImageDescription: UILabel!
+    @IBOutlet weak var dailyImageTitle: UILabel!
     @IBOutlet weak var homeTableView: UITableView!
     @IBOutlet weak var ImageDaily: UIImageView!
 
-
+    @IBOutlet weak var ImageDailyInfosContainer: UIView!
+    @IBOutlet weak var dailyImageContainer: UIView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.homeTableView.delegate = self
         self.homeTableView.dataSource = self
+        
+        ImageDaily.clipsToBounds = true
+        ImageDaily.layer.cornerRadius = 30
+        
+        dailyImageContainer.clipsToBounds = false
+        dailyImageContainer.layer.cornerRadius = 30
+        
+        ImageDailyInfosContainer.clipsToBounds = true
+        ImageDailyInfosContainer.layer.cornerRadius = 30
+        ImageDailyInfosContainer.layer.maskedCorners = [.layerMaxXMinYCorner,.layerMaxXMaxYCorner]
+        
+        ImageDailyInfosContainer.layer.shadowColor = UIColor.lightGray.cgColor
+        ImageDailyInfosContainer.layer.shadowOpacity = 1
+        ImageDailyInfosContainer.layer.shadowOffset = CGSize(width: 0, height: 4)
+        ImageDailyInfosContainer.layer.shadowRadius = 4
+        
+        let colorBorder = UIColor(red: 7/255, green: 44/255, blue: 67/255, alpha: 0.67)
+
+        dailyImageContainer.layer.shadowColor = colorBorder.cgColor
+        dailyImageContainer.layer.shadowOpacity = 1
+        dailyImageContainer.layer.shadowOffset = CGSize(width: 0, height: 4)
+        dailyImageContainer.layer.shadowRadius = 5
+        
+        dailyImageContainer.layer.borderColor = colorBorder.cgColor
+        dailyImageContainer.layer.borderWidth = 1
+
         
         // Do any additional setup after loading the view.
         let config = URLSessionConfiguration.default
@@ -115,22 +145,20 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
 
         let taskImage = sessionImage.dataTask(with: urlImage) { (data, response, error) in
-                print("2")
                 if let error = error {
                     print(error.localizedDescription)
                 } else if let data = data {
                     do {
                         if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
-                            if let imageURLString = json["url"] as? String, let _ = json["title"] as? String, let _ = json["explanation"] as? String {
+                            if let imageURLString = json["url"] as? String, let title = json["title"] as? String, let desc = json["explanation"] as? String {
                                 if let imageURL = URL(string: imageURLString) {
-                                    // Utilisez URLSession pour télécharger l'image
-                                    print("Image URL: \(imageURLString)")
                                     let imageTask = URLSession.shared.dataTask(with: imageURL) { (imageData, _, _) in
                                         if let imageData = imageData, let image = UIImage(data: imageData) {
-                                            // Mettez à jour l'interface utilisateur sur le thread principal
-                                            print("Image URL: \(imageURLString)")
+                        
                                             DispatchQueue.main.async {
                                                 self.ImageDaily.image = image
+                                                self.dailyImageTitle.text = title
+                                                self.dailyImageDescription.text = desc
                                             }
                                         }
                                     }
