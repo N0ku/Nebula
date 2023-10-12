@@ -36,7 +36,7 @@ class PlanetsViewController: UIViewController, UICollectionViewDataSource, UICol
         self.planetCollectionView.backgroundColor = UIColor.clear
         self.planetCollectionView?.backgroundView = UIView(frame: CGRect.zero)
         
-        var layout = PlanetsViewControllerLayout()
+        let layout = PlanetsViewControllerLayout()
         planetCollectionView.collectionViewLayout = layout
         
         planetCollectionView.dataSource = self
@@ -93,6 +93,14 @@ class PlanetsViewController: UIViewController, UICollectionViewDataSource, UICol
         // Configure the cell
         
         return cell!
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+            if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "exoplanet")as? ExoplanetViewController {
+                vc.kepler_name = self.exoplanets[indexPath.row].kepler_name
+                
+                self.present(vc, animated: true, completion: nil)
+            }
     }
 }
 

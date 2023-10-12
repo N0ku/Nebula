@@ -524,6 +524,41 @@ objects in the sky ! 🌌</string>
             </objects>
             <point key="canvasLocation" x="1549" y="-1431"/>
         </scene>
+        <!--Exoplanet View Controller-->
+        <scene sceneID="fmd-ff-tDI">
+            <objects>
+                <viewController storyboardIdentifier="exoplanet" id="RVZ-el-eGE" customClass="ExoplanetViewController" customModule="first" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x70-go-zsb">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3hc-SB-tnq">
+                                <rect key="frame" x="85" y="82" width="223" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="characterWrap" numberOfLines="20" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0E-0R-EcM">
+                                <rect key="frame" x="43" y="214" width="288" height="456"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ipsum metus, accumsan lacinia purus vel, vulputate efficitur neque. Nulla imperdiet viverra eros, id finibus ligula tristique vitae. Donec malesuada nulla felis, sed dapibus lorem luctus quis. Nulla iaculis tempus porta. Donec ut nisl id metus aliquam tempus. Quisque quis dolor metus. Nulla quam mi, volutpat sit amet nisi id, consequat laoreet elit. Sed purus risus, condimentum vel lacinia at, pellentesque sit amet est. Fusce gravida libero ipsum, euismod mollis justo feugiat in. Aliquam erat volutpat.</mutableString>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="u94-uZ-vm8"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="3hc-SB-tnq" id="aY9-sy-qN5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3qP-AH-dZz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="719.84732824427476" y="131.69014084507043"/>
+        </scene>
         <!--Item-->
         <scene sceneID="sOn-ga-RFc">
             <objects>
