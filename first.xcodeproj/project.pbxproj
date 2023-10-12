@@ -45,6 +45,7 @@
 		6CD70B1D2AD6F023004D7DCF /* ObservableCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD70B1B2AD6F023004D7DCF /* ObservableCollectionViewCell.swift */; };
 		6CD70B1E2AD6F023004D7DCF /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CD70B1C2AD6F023004D7DCF /* CollectionViewCell.xib */; };
 		6CD70B212AD72DCE004D7DCF /* CustomCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD70B202AD72DCE004D7DCF /* CustomCollectionViewFlowLayout.swift */; };
+		6CEEF6A82AD8A1C100916794 /* ObservableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEEF6A72AD8A1C100916794 /* ObservableViewController.swift */; };
 		E5B22BC02AD7DE1C00E5D0CB /* CustomEventViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B22BBE2AD7DE1C00E5D0CB /* CustomEventViewCell.swift */; };
 		E5B22BC12AD7DE1C00E5D0CB /* CustomEventViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5B22BBF2AD7DE1C00E5D0CB /* CustomEventViewCell.xib */; };
 		E5B22BC32AD83F8600E5D0CB /* ModalEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B22BC22AD83F8600E5D0CB /* ModalEventViewController.swift */; };
@@ -91,6 +92,7 @@
 		6CD70B1B2AD6F023004D7DCF /* ObservableCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableCollectionViewCell.swift; sourceTree = "<group>"; };
 		6CD70B1C2AD6F023004D7DCF /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		6CD70B202AD72DCE004D7DCF /* CustomCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		6CEEF6A72AD8A1C100916794 /* ObservableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableViewController.swift; sourceTree = "<group>"; };
 		E5B22BBE2AD7DE1C00E5D0CB /* CustomEventViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEventViewCell.swift; sourceTree = "<group>"; };
 		E5B22BBF2AD7DE1C00E5D0CB /* CustomEventViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomEventViewCell.xib; sourceTree = "<group>"; };
 		E5B22BC22AD83F8600E5D0CB /* ModalEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalEventViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				6CC5D6372AD5D46A00AB28EE /* RegisterViewController.swift */,
 				6C4207332AD49FA000B12E3D /* Main.storyboard */,
 				6CD70B172AD6C013004D7DCF /* ObservableObjectsViewController.swift */,
+				6CEEF6A72AD8A1C100916794 /* ObservableViewController.swift */,
 				6CD70B1B2AD6F023004D7DCF /* ObservableCollectionViewCell.swift */,
 				6CD70B1C2AD6F023004D7DCF /* CollectionViewCell.xib */,
 				6C4207362AD49FA100B12E3D /* Assets.xcassets */,
@@ -308,6 +311,7 @@
 				6CD70B212AD72DCE004D7DCF /* CustomCollectionViewFlowLayout.swift in Sources */,
 				6C4207302AD49FA000B12E3D /* SceneDelegate.swift in Sources */,
 				E5B22BC02AD7DE1C00E5D0CB /* CustomEventViewCell.swift in Sources */,
+				6CEEF6A82AD8A1C100916794 /* ObservableViewController.swift in Sources */,
 				613DF8E62AD6F6E50042DD2C /* PlanetViewCell.swift in Sources */,
 				6CC5D6362AD5D45B00AB28EE /* EventsViewController.swift in Sources */,
 				E5B22BC32AD83F8600E5D0CB /* ModalEventViewController.swift in Sources */,

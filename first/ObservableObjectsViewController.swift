@@ -154,5 +154,13 @@ class ObservableObjectsViewController: UIViewController, UICollectionViewDelegat
     
     }
     */
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+            if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "exoplanet")as? ExoplanetViewController {
+                vc.kepler_name = self.exoplanets[indexPath.row].kepler_name
+                
+                self.present(vc, animated: true, completion: nil)
+            }
+    }
 
 }
