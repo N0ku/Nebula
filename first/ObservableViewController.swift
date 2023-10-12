@@ -13,10 +13,25 @@ class ObservableViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var typeLabel: UILabel!
     @IBOutlet weak var observableImage: UIImageView!
+    
+    var observable: ObjectItem? = ObjectItem(json: [:])
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        descLabel.text = observable?.description
+        titleLabel.text = observable?.name
+       
+        
+        if let url = URL(string: observable!.image) {
+            URLSession.shared.dataTask(with: url) { data, response, error in
+                if let data = data, let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        self.observableImage.image = image
+                    }
+                }
+            }.resume()
+        }
     }
     
 
