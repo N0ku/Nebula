@@ -131,9 +131,8 @@ RGlzY292ZXIgdGhlIEV4b3BsYW5ldHMcDSBpbiB0aGUgdW5pdmVyc2Ug8J+MjQ
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZQj-Qy-I0N">
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZQj-Qy-I0N">
                                 <rect key="frame" x="16" y="197" width="361" height="552"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="nW1-A6-eHI">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -141,7 +140,7 @@ RGlzY292ZXIgdGhlIEV4b3BsYW5ldHMcDSBpbiB0aGUgdW5pdmVyc2Ug8J+MjQ
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="planetCell" id="oyO-JS-cuF">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="oyO-JS-cuF" customClass="planetViewCell" customModule="first" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="VuA-yK-BSG">
@@ -150,6 +149,10 @@ RGlzY292ZXIgdGhlIEV4b3BsYW5ldHMcDSBpbiB0aGUgdW5pdmVyc2Ug8J+MjQ
                                         </collectionViewCellContentView>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="tus-5e-7yT" id="ukd-sF-xJg"/>
+                                    <outlet property="delegate" destination="tus-5e-7yT" id="7Tb-xJ-1Q8"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FWi-CA-Zso"/>
@@ -169,6 +172,9 @@ RGlzY292ZXIgdGhlIEV4b3BsYW5ldHMcDSBpbiB0aGUgdW5pdmVyc2Ug8J+MjQ
                     <tabBarItem key="tabBarItem" title="Planet" image="globe.europe.africa" catalog="system" landscapeImage="globe.europe.africa" selectedImage="globe.europe.africa.fill" id="0ZJ-Eb-vJI">
                         <color key="badgeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="planetCollectionView" destination="ZQj-Qy-I0N" id="bTf-tN-YVv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kk7-ll-5jM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -233,7 +239,7 @@ RGlzY292ZXIgdGhlIEV4b3BsYW5ldHMcDSBpbiB0aGUgdW5pdmVyc2Ug8J+MjQ
                             <constraint firstItem="1nC-lU-Se4" firstAttribute="leading" secondItem="JvT-kF-f00" secondAttribute="leading" constant="16" id="wo1-Sj-fsP"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Events" image="calendar.badge.exclamationmark" landscapeImage="calendar.badge.exclamationmark" selectedImage="calendar.badge.exclamationmark" catalog="system" id="PHv-oH-S74"/>
+                    <tabBarItem key="tabBarItem" title="Events" image="calendar.badge.exclamationmark" catalog="system" landscapeImage="calendar.badge.exclamationmark" selectedImage="calendar.badge.exclamationmark" id="PHv-oH-S74"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="die-7J-gn4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -249,13 +255,14 @@ RGlzY292ZXIgdGhlIEV4b3BsYW5ldHMcDSBpbiB0aGUgdW5pdmVyc2Ug8J+MjQ
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOF-v3-AeH">
                                 <rect key="frame" x="30" y="72" width="270" height="84"/>
-                                <string key="text">Some stats about space  🚀</string>
+                                <string key="text">Some stats about
+ space  🚀</string>
                                 <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Humans in space now:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3YB-GD-bdQ">
-                                <rect key="frame" x="104" y="177" width="240" height="30"/>
+                                <rect key="frame" x="104" y="177" width="240" height="24.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -264,16 +271,16 @@ RGlzY292ZXIgdGhlIEV4b3BsYW5ldHMcDSBpbiB0aGUgdW5pdmVyc2Ug8J+MjQ
                                 <rect key="frame" x="16" y="164" width="79" height="93"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1SF-nb-fSc">
-                                <rect key="frame" x="104" y="212" width="21" height="30"/>
+                                <rect key="frame" x="104" y="206.66666666666666" width="21" height="24.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="21"/>
                                 <color key="textColor" red="0.89803921568627454" green="0.48627450980392156" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="astronaut" translatesAutoresizingMaskIntoConstraints="NO" id="hQZ-Q5-okc">
-                                <rect key="frame" x="133" y="216" width="20" height="20"/>
+                                <rect key="frame" x="133" y="210.66666666666666" width="20" height="20"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current ISS potition:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqO-9q-kE5">
-                                <rect key="frame" x="104" y="282" width="209" height="30"/>
+                                <rect key="frame" x="104" y="271.33333333333331" width="209" height="24.666666666666686"/>
                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="21"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -282,7 +289,7 @@ RGlzY292ZXIgdGhlIEV4b3BsYW5ldHMcDSBpbiB0aGUgdW5pdmVyc2Ug8J+MjQ
                                 <rect key="frame" x="16" y="276" width="79" height="90"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-51.066°N -166.438°E" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Eo-Lv-5GI">
-                                <rect key="frame" x="104" y="320" width="220" height="30"/>
+                                <rect key="frame" x="104" y="304" width="220" height="24.666666666666686"/>
                                 <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="21"/>
                                 <color key="textColor" red="0.8980392157" green="0.48627450979999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -318,7 +325,7 @@ RGlzY292ZXIgdGhlIEV4b3BsYW5ldHMcDSBpbiB0aGUgdW5pdmVyc2Ug8J+MjQ
                             <constraint firstItem="8Eo-Lv-5GI" firstAttribute="leading" secondItem="vCk-OS-FNd" secondAttribute="leading" constant="104" id="z7F-Uc-VQW"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Stats" image="chart.bar.xaxis" landscapeImage="chart.bar.xaxis" selectedImage="chart.bar.xaxis" catalog="system" id="415-dH-euO"/>
+                    <tabBarItem key="tabBarItem" title="Stats" image="chart.bar.xaxis" catalog="system" landscapeImage="chart.bar.xaxis" selectedImage="chart.bar.xaxis" id="415-dH-euO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ojl-oY-OkJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -334,7 +341,8 @@ RGlzY292ZXIgdGhlIEV4b3BsYW5ldHMcDSBpbiB0aGUgdW5pdmVyc2Ug8J+MjQ
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZR3-HP-9Oe">
                                 <rect key="frame" x="9" y="73" width="375" height="81.333333333333314"/>
-                                <string key="text">The list of the observable objects in the sky ! 🌌</string>
+                                <string key="text">The list of the observable 
+objects in the sky ! 🌌</string>
                                 <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="29"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -414,13 +422,13 @@ RGlzY292ZXIgdGhlIEV4b3BsYW5ldHMcDSBpbiB0aGUgdW5pdmVyc2Ug8J+MjQ
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The app that takes you beyond   the stars" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fsX-ie-VgU">
-                                <rect key="frame" x="62" y="249.66666666666666" width="269.33333333333331" height="47.666666666666657"/>
+                                <rect key="frame" x="76" y="249.66666666666666" width="241" height="39.666666666666657"/>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySt-O9-DdO">
-                                <rect key="frame" x="334" y="564" width="21" height="12.666666666666629"/>
+                                <rect key="frame" x="334" y="564" width="21" height="10.666666666666629"/>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="9"/>
                                 <color key="textColor" systemColor="systemMintColor"/>
                                 <nil key="highlightedColor"/>
@@ -436,13 +444,13 @@ RGlzY292ZXIgdGhlIEV4b3BsYW5ldHMcDSBpbiB0aGUgdW5pdmVyc2Ug8J+MjQ
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nebula" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ase-Wj-fsp">
-                                <rect key="frame" x="72.000000000000014" y="160" width="249.33333333333337" height="81.666666666666686"/>
+                                <rect key="frame" x="85.666666666666686" y="160" width="222" height="81.666666666666686"/>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="70"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doesn’t have an account ? press" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZU1-yp-XAd">
-                                <rect key="frame" x="179" y="564" width="160" height="12.666666666666629"/>
+                                <rect key="frame" x="179" y="564" width="160" height="10.666666666666629"/>
                                 <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="9"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -540,14 +548,10 @@ RGlzY292ZXIgdGhlIEV4b3BsYW5ldHMcDSBpbiB0aGUgdW5pdmVyc2Ug8J+MjQ
         <image name="astronaut" width="20" height="20"/>
         <image name="calendar" catalog="system" width="128" height="107"/>
         <image name="calendar.badge.exclamationmark" catalog="system" width="128" height="109"/>
-        <image name="calendar.badge.exclamationmark" width="128" height="128"/>
-        <image name="chart.bar.xaxis" width="128" height="128"/>
         <image name="chart.bar.xaxis" catalog="system" width="128" height="97"/>
         <image name="eye" catalog="system" width="128" height="79"/>
-        <image name="globe.europe.africa" width="128" height="128"/>
         <image name="globe.europe.africa" catalog="system" width="128" height="123"/>
         <image name="globe.europe.africa.fill" catalog="system" width="128" height="123"/>
-        <image name="house" width="128" height="128"/>
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="spaceship" width="79" height="93"/>
         <systemColor name="systemBackgroundColor">
