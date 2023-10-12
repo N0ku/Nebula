@@ -51,21 +51,21 @@
                                 <rect key="frame" x="48" y="411" width="297" height="338"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="homeEventCell" textLabel="7RW-Hr-Org" detailTextLabel="QdP-nJ-TIa" style="IBUITableViewCellStyleValue2" id="ZLd-bs-Akx">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="homeEventCell" textLabel="B0w-SL-lE5" detailTextLabel="FCJ-ZP-o7H" style="IBUITableViewCellStyleValue2" id="Wwx-Hb-7Zy">
                                         <rect key="frame" x="0.0" y="50" width="297" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZLd-bs-Akx" id="8Se-rO-6o7">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Wwx-Hb-7Zy" id="s3Q-Ph-HT7">
                                             <rect key="frame" x="0.0" y="0.0" width="297" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7RW-Hr-Org">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="B0w-SL-lE5">
                                                     <rect key="frame" x="16" y="15" width="91" height="15.666666666666666"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QdP-nJ-TIa">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FCJ-ZP-o7H">
                                                     <rect key="frame" x="113" y="15" width="35" height="15.666666666666666"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
@@ -339,25 +339,19 @@ RGlzY292ZXIgdGhlIEV4b3BsYW5ldHMcDSBpbiB0aGUgdW5pdmVyc2Ug8J+MjQ
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="yZZ-yV-oGv">
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="yZZ-yV-oGv">
                                 <rect key="frame" x="16" y="179" width="361" height="570"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Iic-hH-c2p">
-                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="itemSize" width="104" height="107"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="observableCell" id="UiF-DM-Yhd">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="SI3-dH-YsA">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </collectionViewCellContentView>
-                                    </collectionViewCell>
-                                </cells>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Aez-ac-Rly" id="MdJ-8I-c8q"/>
+                                    <outlet property="delegate" destination="Aez-ac-Rly" id="30e-bX-gRB"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bzl-Xw-Jak"/>
@@ -376,10 +370,13 @@ RGlzY292ZXIgdGhlIEV4b3BsYW5ldHMcDSBpbiB0aGUgdW5pdmVyc2Ug8J+MjQ
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Objects" image="eye" catalog="system" landscapeImage="eye" selectedImage="eye" id="9eg-7B-sTN"/>
+                    <connections>
+                        <outlet property="collectionView" destination="yZZ-yV-oGv" id="cOf-3Z-J58"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6VZ-5s-4kM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3333.5877862595416" y="-670.42253521126759"/>
+            <point key="canvasLocation" x="3275.5725190839694" y="-670.42253521126759"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
