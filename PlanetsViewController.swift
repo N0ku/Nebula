@@ -56,16 +56,18 @@ class PlanetsViewController: UIViewController, UICollectionViewDataSource, UICol
             } else {
                 if let json = try? JSONSerialization.jsonObject(with: data!, options: .mutableContainers) {
                         if let jsonArray = json as? [[String: AnyObject]] {
-                            for item in jsonArray {
+                            var number_item = 0
+                            while number_item < 30 {
                                 guard
-                                    let kepler_name = item["kepler_name"] as? String
+                                    let kepler_name = jsonArray[number_item]["kepler_name"] as? String
                                 else {
-                                    continue
+                                    return
                                 }
-                                
+                                print(kepler_name)
                                 let obj =  Exoplanet(kepler_name: kepler_name)
                                 self.exoplanets.append(obj)
-                                                        }
+                                number_item += 1
+                            }
                         }
                     }
             }
