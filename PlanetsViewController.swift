@@ -63,7 +63,6 @@ class PlanetsViewController: UIViewController, UICollectionViewDataSource, UICol
                                 else {
                                     return
                                 }
-                                print(kepler_name)
                                 let obj =  Exoplanet(kepler_name: kepler_name)
                                 self.exoplanets.append(obj)
                                 number_item += 1
