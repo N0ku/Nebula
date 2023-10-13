@@ -49,7 +49,7 @@ class LoginViewController: UIViewController {
         
         
         if self.loginTextField.text == "admin" && self.passwordTextField.text == "admin" {
-            if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "Home") as? HomeViewController {
+            if let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "TabController") as? TabBarController {
                 
                 // Navigation Bar
                 self.navigationController?.pushViewController(vc, animated: true)

@@ -46,6 +46,7 @@
 		6CD70B1E2AD6F023004D7DCF /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CD70B1C2AD6F023004D7DCF /* CollectionViewCell.xib */; };
 		6CD70B212AD72DCE004D7DCF /* CustomCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD70B202AD72DCE004D7DCF /* CustomCollectionViewFlowLayout.swift */; };
 		6CEEF6A82AD8A1C100916794 /* ObservableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEEF6A72AD8A1C100916794 /* ObservableViewController.swift */; };
+		6CEEF6B22AD9442C00916794 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEEF6B12AD9442C00916794 /* TabBarController.swift */; };
 		E5B22BC02AD7DE1C00E5D0CB /* CustomEventViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B22BBE2AD7DE1C00E5D0CB /* CustomEventViewCell.swift */; };
 		E5B22BC12AD7DE1C00E5D0CB /* CustomEventViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5B22BBF2AD7DE1C00E5D0CB /* CustomEventViewCell.xib */; };
 		E5B22BC32AD83F8600E5D0CB /* ModalEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B22BC22AD83F8600E5D0CB /* ModalEventViewController.swift */; };
@@ -93,6 +94,7 @@
 		6CD70B1C2AD6F023004D7DCF /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		6CD70B202AD72DCE004D7DCF /* CustomCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		6CEEF6A72AD8A1C100916794 /* ObservableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableViewController.swift; sourceTree = "<group>"; };
+		6CEEF6B12AD9442C00916794 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		E5B22BBE2AD7DE1C00E5D0CB /* CustomEventViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEventViewCell.swift; sourceTree = "<group>"; };
 		E5B22BBF2AD7DE1C00E5D0CB /* CustomEventViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomEventViewCell.xib; sourceTree = "<group>"; };
 		E5B22BC22AD83F8600E5D0CB /* ModalEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalEventViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				613DF8EF2AD815E00042DD2C /* ExoplanetViewController.swift */,
 				6CC5D6312AD5D32F00AB28EE /* StatsViewController.swift */,
 				6C4207312AD49FA000B12E3D /* LoginViewController.swift */,
+				6CEEF6B12AD9442C00916794 /* TabBarController.swift */,
 				6CC5D62F2AD5D30700AB28EE /* HomeViewController.swift */,
 				E5B22BBE2AD7DE1C00E5D0CB /* CustomEventViewCell.swift */,
 				E5B22BBF2AD7DE1C00E5D0CB /* CustomEventViewCell.xib */,
@@ -303,6 +306,7 @@
 				6CD70B1D2AD6F023004D7DCF /* ObservableCollectionViewCell.swift in Sources */,
 				6C4207322AD49FA000B12E3D /* LoginViewController.swift in Sources */,
 				6C42072E2AD49FA000B12E3D /* AppDelegate.swift in Sources */,
+				6CEEF6B22AD9442C00916794 /* TabBarController.swift in Sources */,
 				6CD70B182AD6C013004D7DCF /* ObservableObjectsViewController.swift in Sources */,
 				613DF8EA2AD7D12C0042DD2C /* PlanetViewCellLayout.swift in Sources */,
 				613DF8E12AD6C8670042DD2C /* PlanetsViewController.swift in Sources */,
