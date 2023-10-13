@@ -279,6 +279,10 @@ RGlzY292ZXIgdGhlIEV4b3BsYW5ldHMcDSBpbiB0aGUgdW5pdmVyc2Ug8J+MjQ
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BIF-TL-l1n" id="AVi-aO-DrE"/>
+                                    <outlet property="delegate" destination="BIF-TL-l1n" id="dsF-EB-mfF"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JvT-kF-f00"/>
@@ -296,6 +300,9 @@ RGlzY292ZXIgdGhlIEV4b3BsYW5ldHMcDSBpbiB0aGUgdW5pdmVyc2Ug8J+MjQ
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Events" image="calendar.badge.exclamationmark" catalog="system" landscapeImage="calendar.badge.exclamationmark" selectedImage="calendar.badge.exclamationmark" id="PHv-oH-S74"/>
+                    <connections>
+                        <outlet property="eventTableView" destination="1nC-lU-Se4" id="Rnc-jb-hZg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="die-7J-gn4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
