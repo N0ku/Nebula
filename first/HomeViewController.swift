@@ -106,7 +106,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         let session = URLSession(configuration: config)
         let sessionImage = URLSession.shared
         let url = URL(string: "http://localhost:5050/events")!
-         let urlImage = URL(string: "https://api.nasa.gov/planetary/apod?api_key=rlaCl7XRgqzwRGiOAYQgKo7yYJ6gCb5hiHvklCos")!
+         let urlImage = URL(string: "https://api.nasa.gov/planetary/apod?api_key=5CsLHO6Hpx24pNXrI7U0Ghnc57XDxc420epJrJFQ&date=")!
         
         
         
