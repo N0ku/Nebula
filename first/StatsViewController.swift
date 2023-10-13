@@ -20,6 +20,9 @@ class StatsViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "statsCell", for: indexPath)
         
+        cell.backgroundColor = UIColor.clear
+
+        
         if indexPath.row < people.count {
             let person = people[indexPath.row]
             if let name = person["name"] {
@@ -39,6 +42,9 @@ class StatsViewController: UIViewController, UITableViewDelegate, UITableViewDat
         super.viewDidLoad()
 
         Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(fetchObjectsData), userInfo: nil, repeats: true)
+        
+        self.statsTableView.backgroundColor = UIColor.clear
+        self.statsTableView.backgroundView = UIView(frame: CGRect.zero)
     }
     
     @objc func fetchObjectsData(){
