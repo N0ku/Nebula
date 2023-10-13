@@ -11,7 +11,6 @@ class ObservableViewController: UIViewController {
 
     @IBOutlet weak var descLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var typeLabel: UILabel!
     @IBOutlet weak var observableImage: UIImageView!
     
     var observable: ObjectItem? = ObjectItem(json: [:])
