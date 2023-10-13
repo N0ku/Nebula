@@ -7,15 +7,38 @@
 
 import UIKit
 
-class StatsViewController: UIViewController {
+class StatsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    var people: [[String: String]] = []
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return people.count
+    }
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "statsCell", for: indexPath)
+        
+        if indexPath.row < people.count {
+            let person = people[indexPath.row]
+            if let name = person["name"] {
+                cell.textLabel?.text = name
+            }
+        }
+        
+        return cell
+    }
+    
 
     @IBOutlet weak var numberLabel: UILabel!
     @IBOutlet weak var coordinateLabel: UILabel!
 
+    @IBOutlet weak var statsTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        var timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(fetchObjectsData), userInfo: nil, repeats: true)
+        Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(fetchObjectsData), userInfo: nil, repeats: true)
     }
     
     @objc func fetchObjectsData(){
@@ -48,14 +71,19 @@ class StatsViewController: UIViewController {
                 if let json = try? JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? [String: Any] {
                     if
                        let number = json["number"] as? Int,
-                       let people = json["people"] as? [Any]
+                       let people = json["people"] as? [[String:String]]
                     {
                         self.updateLabel(number)
+                        self.people = people
                     }
                 }
             }
         }
         task2.resume()
+        
+        DispatchQueue.main.async {
+            self.statsTableView.reloadData()
+                   }
     }
     
     func updateLabel(_ number: Int){
